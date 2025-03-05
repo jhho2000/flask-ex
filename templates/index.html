@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask 웹페이지</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'layout/top.html' %}
+
+    <main class="content">
+        <div class="container">
+            <h2>콘텐츠 영역 (Content)</h2>
+            <p>이 영역은 웹페이지의 주요 콘텐츠가 들어가는 부분입니다.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>카드 1</h3>
+                    <p>카드 내용이 들어갑니다.</p>
+                </div>
+                <div class="card">
+                    <h3>카드 2</h3>
+                    <p>카드 내용이 들어갑니다.</p>
+                </div>
+                <div class="card">
+                    <h3>카드 3</h3>
+                    <p>카드 내용이 들어갑니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'layout/footer.html' %}
+    
+</body>
+</html>
